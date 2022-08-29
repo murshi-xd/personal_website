@@ -4,7 +4,7 @@
     padding: 10px;
 }
 
-html {
+html:focus-within {
     scroll-behavior: smooth;
 }
 
@@ -12,9 +12,15 @@ html {
     background: #f5f5f7;
 }
 
+.social_media a {
+    justify-content: space-between;
+    padding: .5rem;
+}
+
 .body {
     padding: 0;
     background-color: #fff7ef;
+    overflow: hidden;
 }
 
 .section {
@@ -22,6 +28,7 @@ html {
     padding: 3rem;
     margin: 3rem;
     border-radius: 2rem;
+    scroll-snap-align: center;
 }
 
 .footer {
@@ -52,6 +59,10 @@ html {
 .bi {
     vertical-align: -.125em;
     fill: currentColor;
+}
+
+.btn {
+    font-weight: 900;
 }
 
 @media screen and (min-width:576px) {

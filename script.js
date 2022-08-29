@@ -6,5 +6,5 @@ var typed = new Typed(".auto-type", {
 })
 
 const scroll = new SmoothScroll('.navbar a[href*="#"]', {
-    speed: 250
+    speed: 800
 });
