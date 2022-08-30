@@ -12,3 +12,13 @@ const scroll = new SmoothScroll('.navbar a[href*="#"]', {
 AOS.init({
     duration: 1500
 })
+
+$('.navbar-nav>li>a').on('click', function() {
+    $('.navbar-collapse').collapse('hide');
+});
+
+history.scrollRestoration = "manual";
+
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
