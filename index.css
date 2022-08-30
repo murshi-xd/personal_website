@@ -1,3 +1,5 @@
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
 .icon {
     border-radius: 50%;
     border: 1px solid grey;
@@ -17,22 +19,16 @@ html:focus-within {
     padding: .5rem;
 }
 
-.body {
-    padding: 0;
+body {
     background-color: #fff7ef;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .section {
     background-color: #fff;
-    padding: 3rem;
-    margin: 3rem;
-    border-radius: 2rem;
-    scroll-snap-align: center;
-}
-
-.footer {
-    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: auto;
 }
 
 .auto {
@@ -65,7 +61,7 @@ html:focus-within {
     font-weight: 900;
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:300px) {
     html {
         font-size: .8rem;
     }
@@ -75,8 +71,14 @@ html:focus-within {
     .intro_items {
         align-items: center;
     }
-    .about_text {
-        font-size: large;
+    .section,
+    .about {
+        margin: 1rem;
+        padding: 1rem;
+        margin-top: auto;
+    }
+    body {
+        padding-top: 45px;
     }
 }
 
@@ -87,8 +89,16 @@ html:focus-within {
     .intro_image {
         width: 100%;
     }
+    .section,
+    .about {
+        padding: 3rem;
+        margin: 3rem;
+    }
+    body {
+        padding-top: 0;
+    }
     .about_text {
-        font-size: x-large;
+        font-size: 1.3rem;
     }
 }
 
@@ -98,5 +108,155 @@ html:focus-within {
     }
     .intro_image {
         width: 100%;
+    }
+    .section,
+    .about {
+        padding: 3rem;
+        margin: 3rem;
+        margin-bottom: auto;
+    }
+    body {
+        padding-top: 0;
+    }
+}
+
+#skills .container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50% 14%;
+}
+
+#skills .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10% 15%;
+}
+
+#skills .col1 {
+    width: 33.33%;
+    padding: 4% 5%;
+    box-sizing: border-box;
+}
+
+#skills .bg-1 {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+#skills .bg-3 {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#skills h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: hsl(0, 0%, 95%);
+    margin: 0;
+    padding: 10px 0;
+}
+
+#skills img {
+    width: 75%;
+}
+
+#skills p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    line-height: 22px;
+    padding-bottom: 50px;
+    margin-top: 0px;
+}
+
+#skills a {
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 95%);
+}
+
+#skills a:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+#skills .bg-1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#skills .bg-1 a {
+    color: hsl(31, 77%, 52%);
+}
+
+#skills .bg-1 a:hover,
+#skills .bg-2 a:hover,
+#skills .bg-3 a:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+#skills .bg-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#skills .bg-2 a {
+    color: hsl(184, 100%, 22%);
+}
+
+#skills .bg-3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+#skills .bg-3 a {
+    color: hsl(179, 100%, 13%);
+}
+
+@media(min-width:1200px) {
+    #skills .container {
+        max-width: 1200px;
+    }
+}
+
+@media(max-width:1192px) {
+    #skills .row1 {
+        padding: 8%;
+    }
+    #skills .container {
+        padding: 10% 11%;
+    }
+    #skills .col1 {
+        padding: 7% 5%;
+    }
+}
+
+@media(max-width:992px) {
+    #skills p {
+        padding-bottom: 30px;
+    }
+    #skills a {
+        padding: 12px 22px;
+    }
+    #skills .col1 {
+        width: 100%;
+        padding: 17% 10%;
+    }
+    #skills .bg-1 {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 12px;
+    }
+    #skills .bg-3 {
+        border-bottom-left-radius: 12px;
+        border-top-right-radius: 0px;
     }
 }
