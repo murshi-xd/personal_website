@@ -1,5 +1,6 @@
 @import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
 @import url('https://fonts.google.com/specimen/Lexend+Deca');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .icon {
     border-radius: 50%;
     border: 1px solid grey;
@@ -10,8 +11,12 @@ html:focus-within {
     scroll-behavior: smooth;
 }
 
-.main {
-    background: #f5f5f7;
+.home {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/987/580/original/abstract-diagonal-white-grey-background-and-texture-free-vector.jpg');
+    background-blend-mode: screen;
+    box-shadow: 0 8px 6px -6px black;
+    background-color: rgba(245, 245, 247, .8);
+    box-shadow: 0px 9px 15px -12px black;
 }
 
 .social_media a {
@@ -20,13 +25,12 @@ html:focus-within {
 }
 
 body {
-    background-color: #fff7ef;
+    background-color: hsl(0, 0%, 95%);
     margin: 0;
     padding: 0;
 }
 
 .section {
-    background-color: #fff;
     border-radius: 1rem;
     margin-bottom: auto;
 }
@@ -42,6 +46,7 @@ body {
 .about_text {
     padding-top: 2rem;
     text-align: justify;
+    font-family: 'Poppins', sans-serif;
 }
 
 .b-example-divider {
@@ -160,10 +165,15 @@ body {
     color: hsl(0, 0%, 95%);
     margin: 0;
     padding: 10px 0;
+    text-align: center;
 }
 
 #skills img {
-    width: 75%;
+    width: 160px;
+    height: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #skills p {
